@@ -54,7 +54,7 @@ chmod +x update.sh
 sudo ./update.sh
 
 if [ ! -f /usr/bin/discover ]; then
-    echo $(sudo ln -s ${PWD}/discover.sh /usr/bin/discover)
+    echo $(sudo ln -s ${PWD}/discover.sh /usr/local/bin/discover)
 fi
 
 #To check if file exists if [ -f "$FILE" ] and to check if a directory exists if [ -d "$DIRECTORY_NAME_FULL" ]
@@ -92,7 +92,7 @@ echo $(sudo apt-get install python2.7 python2.7-dev python-pip python-docutils g
 cd golismero
 echo $(pip install -r requirements.txt)
 echo $(pip install -r requirements_unix.txt)
-echo $(sudo ln -s ${PWD}/golismero.py /usr/bin/golismero)
+echo $(sudo ln -s ${PWD}/golismero.py /usr/local/bin/golismero)
 
 #-----------------------------------------------------------------------------------------------------
 #-----------------------------------------------------------------------------------------------------
