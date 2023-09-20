@@ -49,3 +49,5 @@ do
         echo ""
     fi
 done < /tmp/interfaces_list.file
+
+exit 0
