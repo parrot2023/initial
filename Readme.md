@@ -35,6 +35,6 @@ Here are the steps you will need to make macchanger.sh load on startup:
 
         systemctl enable macchanger_on_start.service
 
-Go ahead then and reboot, and make sure it's all working now. (And if it does not and blows up the neighbor's cat, blame the dog!)
+Go ahead then and reboot, and make sure it's all working now.
 
-If needed, you can also systemctl disable fix-backlight.service to make it stop running at boot.
+If needed, you can also systemctl disable macchanger_on_start.service to make it stop running at boot.
